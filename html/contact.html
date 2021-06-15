@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="professional web designer, programmer, business adminstration">
+	<meta name="author" content="Jenish Basnet">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">             <!-- Meta Tag -->
+	<script type="text/javascript" src="../js/javaScript.js"></script>
+	<style>
+		.form{
+			position: absolute;
+			top: 30%;
+			left: 45%;
+			width: 40%;
+			height: 50%;
+			border-style: solid;
+			border-color: yellow;
+			border-width: 5px;
+			font-size: 50px;
+			font-weight: initial;
+			background-color: rgba(255, 255, 255, .4);
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="nav">
+			<a href="home.html" class="a">HOME</a>
+			<a href="cv.html" class="b">CV</a>
+			<a href="blog.html" class="c">BLOG</a>
+			<a href="research.html" class="d">RESEARCH</a>                    <!-- creating navigation bar -->
+			<a href="contact.html" class="current">CONTACT</a>	
+		</div>
+	</header>
+	<audio autoplay loop> 
+		<source src="../materials/backgroundmusic.mp3" type="audio/mpeg">     <!-- Adding background music -->
+	</audio>
+	<div class="form">
+		<form onsubmit="validateForm()" name="messageForm">
+			<h1 style="font-size: 50px;text-align: center;color:white;font-family: inherit;background-color: black;opacity: 0.9">Any queries or feedbacks?</h1>
+			 First name:
+  			<input type="text" name="firstname" >
+ 			 <br>
+ 			 Last name:
+  			<input type="text" name="lastname">
+  			<br>
+  			 Email:
+  			<input type="email" name="email" >                                <!-- creating a contact form -->
+  			<br>
+  			Message:
+  			<input type="text" name="message">
+
+ 			 <br>
+  			<input type="submit" class="button" value="Submit">
+		</form>
+	</div>
+	<button class="open-button" onclick="openContact()">Contact me </button>     <!-- Creating a popup -->
+		<div class="contact" id="contactPop">
+			<h1>
+				Contact me at
+			</h1>
+			<div class="gmail">
+				<a href="https://www.gmail.com/"target="_blank"><img src="../materials/gmail.png"></a>
+				<a href="https://www.gmail.com/"target="_blank"><p style="font-size: 30px;">Jenish.basnet@gmail.com</p></a>
+			</div>
+			<a href="mailto:cooljenish1@gmail.com?subject=Contact me &body=Email Address">Email Address</a>
+			<div class="phone">
+				<a href="https://www.viber.com/"target="_blank"><img src="../materials/phone.png"></a>		
+				<a href="https://www.viber.com/"target="_blank"><p style="font-size: 30px">+(977)9864146286</p></a>
+				</div>	
+			<button type="button" class="close" onclick="closeContact()">Close</button>	<!-- Closes the popup -->
+			</div>
+
+	<footer>
+		<p>Jenish Basnet, Copyright &copy;</p>                                          <!-- Footer section -->
+		<div class="social">
+			<a href="https://www.facebook.com/"target="_blank"><img src="../materials/fb.png"></a>
+			<a href="https://www.instagram.com/"target="_blank"><img src="../materials/ig.png"></a>
+			<a href="https://www.twitter.com/"target="_blank"><img src="../materials/tw.png"></a>
+		</div>                                                         <!-- Adding social icon in the footer -->
+	</footer>                                        
+</body>
+</html>

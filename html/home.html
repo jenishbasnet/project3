@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="professional web designer, programmer, business adminstration">
+	<meta name="author" content="Jenish Basnet">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">             <!-- Meta tag -->
+	<script type="text/javascript" src="../js/javaScript.js"></script>
+<style>                                                                         
+	.image img{
+		border-radius: 20%;
+		width: 20%;
+		height: 30%;
+		border-style: double;
+		border-color: yellow;
+		border-width: 3px;
+		position: absolute;
+		opacity: 1; 
+		top: 11.9%;
+		left: 60.5%;
+		opacity: 1;
+		background-color: rgba(255,255,0,0.3);
+		}/*setting image at the center*/                                         
+	.image img:hover{
+		background-color: rgba(0,0,0,0.7);
+		width: 21%;
+		height: 31%;
+	}/*Adding hover effect to the image*/
+	h1{
+		font-weight: initial;
+	}/*Changing the font weight of the heading*/
+	.content{
+	width : 40%;
+	height: 50%;
+	position: absolute;
+	top: 32%;
+	left: 40%;
+	border-style: double;
+	border-color: yellow;
+	float: left;
+	background-color: rgba(255, 255, 255, .4);
+	}/*moving content to the center and designning accordingly*/
+	.content h1:hover{
+		color: red;
+	}
+	.content p:hover{
+		color: green;
+	}/*adding hover effect to the heading and paragraph*/
+</style>	
+</head>
+<body>
+	<header>
+		<div class="nav">
+			<a href="home.html" class="current">HOME</a>
+			<a href="cv.html" class="b">CV</a>
+			<a href="blog.html" class="c">BLOG</a>             <!-- Creating navigation bar -->                          
+			<a href="research.html" class="d">RESEARCH</a> 
+			<a href="contact.html" class="e">CONTACT</a>	
+		</div>  
+	</header>
+	<audio autoplay loop>
+		<source src="../materials/backgroundmusic.mp3" type="audio/mpeg"> <!-- Adding background audio -->
+	</audio>
+	<div class="content">
+			<h1 style="font-size: 70px">About me:</h1>
+			<p style="font-size: 50px">Hey! My name is Jenish Basnet. I am a B.S.C.(Hons)Computing student of Itahari International college.</p>
+	</div>                                                               <!-- Content about me  -->
+	<div class="image">
+	<a href="cv.html"><img id="background" src="../materials/jenish.png"></a>
+	</div>
+	<footer>
+		<p>Jenish Basnet, Copyright &copy;</p>                            <!-- Footer section -->
+		<div class="social">
+			<a href="https://www.facebook.com/"target="_blank"><img src="../materials/fb.png"></a>
+			<a href="https://www.instagram.com/"target="_blank"><img src="../materials/ig.png"></a>
+			<a href="https://www.twitter.com/"target="_blank"><img src="../materials/tw.png"></a>
+		</div>                                                             <!-- Adding social icon in footer -->
+	</footer>
+</body>
+</html>
